@@ -1,18 +1,15 @@
 import {React} from 'react'
 import { Navbar, Nav, Container, Button} from 'react-bootstrap';
-import logo from './logo_new.svg'
 import './index.css'
 
 export default function NavBar() {
 
-  // const [expand, setExpand] = useState(false);
-  
   return (
-    <Navbar expand="md" sticky='top'>
+    <Navbar bg='dark' expand="md" sticky='top'>
       <Container className='nav-container'>
         <Navbar.Brand>
-          <img src={logo} alt='logo' className='nav-logo'/>&nbsp;
-          Carol's
+          <img src={require('./logo.jpeg')} alt='logo' className='nav-logo'/>&nbsp;
+          <span>Carol's</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
         <Navbar.Collapse id="basic-navbar-nav">
