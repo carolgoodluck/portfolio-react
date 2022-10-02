@@ -16,7 +16,7 @@ export default function Contact() {
         console.log('点击提交');
         event.preventDefault();
         if (fnRef.current.value && lnRef.current.value && emailRef.current.value && phoneRef.current.value && messageRef.current.value) 
-            return false
+            alert("Sorry I don't have a server to receive your information, \nplease contact me through LinkedIn,\nclick the icon on right cover.\nThank you.")
         else
             alert("Please check your inputs and fill all. ")
     }

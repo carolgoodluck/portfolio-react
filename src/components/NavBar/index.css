@@ -12,9 +12,10 @@
 
 .navbar .nav-container{
     color: white;
+    width: 100%;
 }
 
-.navbar-nav{
+.tech-link{
     margin-right: 50rem;
 }
 
@@ -23,10 +24,6 @@
     opacity: 0.75;
     margin-right: 0.5rem;
 }
-
-/* .navbar-collapse{
-    padding-right: 2rem;
-} */
 
 .nav-link{
     color: rgb(136, 132, 132);
@@ -43,6 +40,25 @@
     font-size: 14px;
 }
 
+.icon{
+    width: 100vh;
+    height: 4%;
+    /* background-color: antiquewhite; */
+}
+
+svg g {
+    stroke: antiquewhite;
+    fill: antiquewhite;
+}
+
+svg{
+    padding-right: 5px;
+    width: 5vh !important;
+}
+
+.linkedin-icon{
+    margin-right: 3rem !important;
+}
 
 
 
