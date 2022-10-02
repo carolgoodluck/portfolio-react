@@ -1,13 +1,11 @@
-import {React, useState, useRef} from 'react'
+import {React, useRef} from 'react'
 import {Container, Row, Col} from 'react-bootstrap'
-import TrackVisibility from 'react-on-screen';
 import 'animate.css';
 import contact from './contact.svg'
 import './index.css'
 
 export default function Contact() {
 
-    // const [submited, setSubmit] = useState(false);
     const fnRef = useRef();
     const lnRef = useRef();
     const emailRef = useRef();

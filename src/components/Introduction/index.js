@@ -37,12 +37,8 @@ export default function Introduction() {
     };
 
   useEffect(()=>{
-    const timer = setInterval(()=>{display()}, 300);
-    return ()=>{clearInterval(timer)}
-  }, [idx])
-
-  const display = ()=>{
-    const len = showInfo.length;
+    const timer = setInterval(()=>{
+      const len = showInfo.length;
     // 表示已显示完,停留2s，重新写入过程
     if (idx === len+1){
       setIdx(0);
@@ -52,7 +48,22 @@ export default function Introduction() {
       setText(showInfo.substring(0,idx))
       setIdx(idx+1);
     }
-  }
+    }, 300);
+    return ()=>{clearInterval(timer)}
+  }, [idx])
+
+  // const display = ()=>{
+  //   const len = showInfo.length;
+  //   // 表示已显示完,停留2s，重新写入过程
+  //   if (idx === len+1){
+  //     setIdx(0);
+  //   }
+  //   // 往前执行
+  //   else{
+  //     setText(showInfo.substring(0,idx))
+  //     setIdx(idx+1);
+  //   }
+  // }
 
   const handleMouse = ()=>{
     setMouseEnter(!isMouseEnter)
